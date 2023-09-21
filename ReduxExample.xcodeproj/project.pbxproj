@@ -8,17 +8,63 @@
 
 /* Begin PBXBuildFile section */
 		B17B7D392ABB272100BEB714 /* ReduxExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B7D382ABB272100BEB714 /* ReduxExampleApp.swift */; };
-		B17B7D3B2ABB272100BEB714 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B7D3A2ABB272100BEB714 /* ContentView.swift */; };
+		B17B7D3B2ABB272100BEB714 /* PostsListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B7D3A2ABB272100BEB714 /* PostsListScreen.swift */; };
 		B17B7D3D2ABB272300BEB714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B17B7D3C2ABB272300BEB714 /* Assets.xcassets */; };
 		B17B7D402ABB272300BEB714 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B17B7D3F2ABB272300BEB714 /* Preview Assets.xcassets */; };
+		B17B7D482ABB28AD00BEB714 /* Architecture.png in Resources */ = {isa = PBXBuildFile; fileRef = B17B7D472ABB28AD00BEB714 /* Architecture.png */; };
+		B17B7D4C2ABB290800BEB714 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B7D4B2ABB290800BEB714 /* Color+Extension.swift */; };
+		B17B7D4F2ABB2A7300BEB714 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B7D4E2ABB2A7300BEB714 /* Post.swift */; };
+		B17B7D522ABB2AD900BEB714 /* PostState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B7D512ABB2AD900BEB714 /* PostState.swift */; };
+		B17B7D552ABB2B1200BEB714 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B7D542ABB2B1200BEB714 /* AppState.swift */; };
+		B17B7D582ABB2B5D00BEB714 /* PostReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B7D572ABB2B5D00BEB714 /* PostReducer.swift */; };
+		B17B7D5B2ABB2BB700BEB714 /* PostAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B7D5A2ABB2BB700BEB714 /* PostAction.swift */; };
+		B17B7D5E2ABB2C0900BEB714 /* PostsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B7D5D2ABB2C0900BEB714 /* PostsService.swift */; };
+		B17B7D602ABB2D1600BEB714 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B7D5F2ABB2D1600BEB714 /* AppReducer.swift */; };
+		B17B7D622ABB2D5800BEB714 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B7D612ABB2D5800BEB714 /* AppAction.swift */; };
+		B17B7D652ABC280B00BEB714 /* PostMiddlware.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B7D642ABC280B00BEB714 /* PostMiddlware.swift */; };
+		B17B7D692ABC454900BEB714 /* PostsEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B7D682ABC454900BEB714 /* PostsEndpoints.swift */; };
+		B17B7D6B2ABC471000BEB714 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B7D6A2ABC471000BEB714 /* Requestable.swift */; };
+		B17B7D6D2ABC54B800BEB714 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B7D6C2ABC54B800BEB714 /* NetworkRequest.swift */; };
+		B17B7D6F2ABC554500BEB714 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B7D6E2ABC554500BEB714 /* Enviroment.swift */; };
+		B17B7D712ABC55A500BEB714 /* NativeRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B7D702ABC55A500BEB714 /* NativeRequestable.swift */; };
+		B17B7D762ABC59C300BEB714 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B7D752ABC59C300BEB714 /* AppStore.swift */; };
+		B17B7D7C2ABC69D700BEB714 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B7D7B2ABC69D700BEB714 /* Logger.swift */; };
+		B17B7D8B2ABC928A00BEB714 /* DetailPostScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B7D8A2ABC928A00BEB714 /* DetailPostScreen.swift */; };
+		B17B7D8D2ABC967600BEB714 /* DetailPostAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B7D8C2ABC967600BEB714 /* DetailPostAction.swift */; };
+		B17B7D8F2ABC969A00BEB714 /* DetailPostReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B7D8E2ABC969A00BEB714 /* DetailPostReducer.swift */; };
+		B17B7D912ABC97E700BEB714 /* DetailPostState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B7D902ABC97E700BEB714 /* DetailPostState.swift */; };
+		B17B7D932ABC997200BEB714 /* DetailPostMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17B7D922ABC997200BEB714 /* DetailPostMiddleware.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B17B7D352ABB272100BEB714 /* ReduxExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B17B7D382ABB272100BEB714 /* ReduxExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxExampleApp.swift; sourceTree = "<group>"; };
-		B17B7D3A2ABB272100BEB714 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B17B7D3A2ABB272100BEB714 /* PostsListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListScreen.swift; sourceTree = "<group>"; };
 		B17B7D3C2ABB272300BEB714 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B17B7D3F2ABB272300BEB714 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B17B7D472ABB28AD00BEB714 /* Architecture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Architecture.png; sourceTree = "<group>"; };
+		B17B7D4B2ABB290800BEB714 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		B17B7D4E2ABB2A7300BEB714 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		B17B7D512ABB2AD900BEB714 /* PostState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostState.swift; sourceTree = "<group>"; };
+		B17B7D542ABB2B1200BEB714 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		B17B7D572ABB2B5D00BEB714 /* PostReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostReducer.swift; sourceTree = "<group>"; };
+		B17B7D5A2ABB2BB700BEB714 /* PostAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAction.swift; sourceTree = "<group>"; };
+		B17B7D5D2ABB2C0900BEB714 /* PostsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsService.swift; sourceTree = "<group>"; };
+		B17B7D5F2ABB2D1600BEB714 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		B17B7D612ABB2D5800BEB714 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
+		B17B7D642ABC280B00BEB714 /* PostMiddlware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMiddlware.swift; sourceTree = "<group>"; };
+		B17B7D682ABC454900BEB714 /* PostsEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsEndpoints.swift; sourceTree = "<group>"; };
+		B17B7D6A2ABC471000BEB714 /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
+		B17B7D6C2ABC54B800BEB714 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		B17B7D6E2ABC554500BEB714 /* Enviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
+		B17B7D702ABC55A500BEB714 /* NativeRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeRequestable.swift; sourceTree = "<group>"; };
+		B17B7D752ABC59C300BEB714 /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		B17B7D7B2ABC69D700BEB714 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		B17B7D8A2ABC928A00BEB714 /* DetailPostScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostScreen.swift; sourceTree = "<group>"; };
+		B17B7D8C2ABC967600BEB714 /* DetailPostAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostAction.swift; sourceTree = "<group>"; };
+		B17B7D8E2ABC969A00BEB714 /* DetailPostReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostReducer.swift; sourceTree = "<group>"; };
+		B17B7D902ABC97E700BEB714 /* DetailPostState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostState.swift; sourceTree = "<group>"; };
+		B17B7D922ABC997200BEB714 /* DetailPostMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostMiddleware.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +97,17 @@
 		B17B7D372ABB272100BEB714 /* ReduxExample */ = {
 			isa = PBXGroup;
 			children = (
+				B17B7D742ABC59B300BEB714 /* Store */,
+				B17B7D632ABC276D00BEB714 /* Middlewares */,
+				B17B7D5C2ABB2BFA00BEB714 /* Services */,
+				B17B7D592ABB2BAE00BEB714 /* Actions */,
+				B17B7D562ABB2B4900BEB714 /* Reducers */,
+				B17B7D502ABB2ACA00BEB714 /* AppState */,
+				B17B7D4D2ABB2A2000BEB714 /* Model */,
+				B17B7D492ABB28EF00BEB714 /* Helper */,
+				B17B7D782ABC650800BEB714 /* Screens */,
+				B17B7D462ABB289C00BEB714 /* Resources */,
 				B17B7D382ABB272100BEB714 /* ReduxExampleApp.swift */,
-				B17B7D3A2ABB272100BEB714 /* ContentView.swift */,
 				B17B7D3C2ABB272300BEB714 /* Assets.xcassets */,
 				B17B7D3E2ABB272300BEB714 /* Preview Content */,
 			);
@@ -65,6 +120,132 @@
 				B17B7D3F2ABB272300BEB714 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B17B7D462ABB289C00BEB714 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B17B7D472ABB28AD00BEB714 /* Architecture.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B17B7D492ABB28EF00BEB714 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B17B7D4A2ABB28F800BEB714 /* Extension */,
+				B17B7D7B2ABC69D700BEB714 /* Logger.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		B17B7D4A2ABB28F800BEB714 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B17B7D4B2ABB290800BEB714 /* Color+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B17B7D4D2ABB2A2000BEB714 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B17B7D4E2ABB2A7300BEB714 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B17B7D502ABB2ACA00BEB714 /* AppState */ = {
+			isa = PBXGroup;
+			children = (
+				B17B7D512ABB2AD900BEB714 /* PostState.swift */,
+				B17B7D542ABB2B1200BEB714 /* AppState.swift */,
+				B17B7D902ABC97E700BEB714 /* DetailPostState.swift */,
+			);
+			path = AppState;
+			sourceTree = "<group>";
+		};
+		B17B7D562ABB2B4900BEB714 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				B17B7D572ABB2B5D00BEB714 /* PostReducer.swift */,
+				B17B7D5F2ABB2D1600BEB714 /* AppReducer.swift */,
+				B17B7D8E2ABC969A00BEB714 /* DetailPostReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		B17B7D592ABB2BAE00BEB714 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				B17B7D5A2ABB2BB700BEB714 /* PostAction.swift */,
+				B17B7D612ABB2D5800BEB714 /* AppAction.swift */,
+				B17B7D8C2ABC967600BEB714 /* DetailPostAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		B17B7D5C2ABB2BFA00BEB714 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B17B7D672ABC452700BEB714 /* NetworkService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B17B7D632ABC276D00BEB714 /* Middlewares */ = {
+			isa = PBXGroup;
+			children = (
+				B17B7D642ABC280B00BEB714 /* PostMiddlware.swift */,
+				B17B7D922ABC997200BEB714 /* DetailPostMiddleware.swift */,
+			);
+			path = Middlewares;
+			sourceTree = "<group>";
+		};
+		B17B7D672ABC452700BEB714 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				B17B7D6E2ABC554500BEB714 /* Enviroment.swift */,
+				B17B7D722ABC563800BEB714 /* Helper */,
+				B17B7D732ABC571200BEB714 /* PostsService */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		B17B7D722ABC563800BEB714 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B17B7D6A2ABC471000BEB714 /* Requestable.swift */,
+				B17B7D6C2ABC54B800BEB714 /* NetworkRequest.swift */,
+				B17B7D702ABC55A500BEB714 /* NativeRequestable.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		B17B7D732ABC571200BEB714 /* PostsService */ = {
+			isa = PBXGroup;
+			children = (
+				B17B7D5D2ABB2C0900BEB714 /* PostsService.swift */,
+				B17B7D682ABC454900BEB714 /* PostsEndpoints.swift */,
+			);
+			path = PostsService;
+			sourceTree = "<group>";
+		};
+		B17B7D742ABC59B300BEB714 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				B17B7D752ABC59C300BEB714 /* AppStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		B17B7D782ABC650800BEB714 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B17B7D3A2ABB272100BEB714 /* PostsListScreen.swift */,
+				B17B7D8A2ABC928A00BEB714 /* DetailPostScreen.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +308,7 @@
 			files = (
 				B17B7D402ABB272300BEB714 /* Preview Assets.xcassets in Resources */,
 				B17B7D3D2ABB272300BEB714 /* Assets.xcassets in Resources */,
+				B17B7D482ABB28AD00BEB714 /* Architecture.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +319,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B17B7D3B2ABB272100BEB714 /* ContentView.swift in Sources */,
+				B17B7D3B2ABB272100BEB714 /* PostsListScreen.swift in Sources */,
+				B17B7D6B2ABC471000BEB714 /* Requestable.swift in Sources */,
+				B17B7D912ABC97E700BEB714 /* DetailPostState.swift in Sources */,
+				B17B7D6F2ABC554500BEB714 /* Enviroment.swift in Sources */,
+				B17B7D4C2ABB290800BEB714 /* Color+Extension.swift in Sources */,
+				B17B7D692ABC454900BEB714 /* PostsEndpoints.swift in Sources */,
+				B17B7D6D2ABC54B800BEB714 /* NetworkRequest.swift in Sources */,
+				B17B7D8B2ABC928A00BEB714 /* DetailPostScreen.swift in Sources */,
 				B17B7D392ABB272100BEB714 /* ReduxExampleApp.swift in Sources */,
+				B17B7D582ABB2B5D00BEB714 /* PostReducer.swift in Sources */,
+				B17B7D622ABB2D5800BEB714 /* AppAction.swift in Sources */,
+				B17B7D602ABB2D1600BEB714 /* AppReducer.swift in Sources */,
+				B17B7D7C2ABC69D700BEB714 /* Logger.swift in Sources */,
+				B17B7D552ABB2B1200BEB714 /* AppState.swift in Sources */,
+				B17B7D652ABC280B00BEB714 /* PostMiddlware.swift in Sources */,
+				B17B7D522ABB2AD900BEB714 /* PostState.swift in Sources */,
+				B17B7D4F2ABB2A7300BEB714 /* Post.swift in Sources */,
+				B17B7D5E2ABB2C0900BEB714 /* PostsService.swift in Sources */,
+				B17B7D762ABC59C300BEB714 /* AppStore.swift in Sources */,
+				B17B7D712ABC55A500BEB714 /* NativeRequestable.swift in Sources */,
+				B17B7D932ABC997200BEB714 /* DetailPostMiddleware.swift in Sources */,
+				B17B7D8F2ABC969A00BEB714 /* DetailPostReducer.swift in Sources */,
+				B17B7D5B2ABB2BB700BEB714 /* PostAction.swift in Sources */,
+				B17B7D8D2ABC967600BEB714 /* DetailPostAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
